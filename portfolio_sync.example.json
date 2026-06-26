@@ -1,0 +1,44 @@
+{
+  "_comment": "Copy to portfolio_sync.json. Claude refreshes this from your Robinhood agentic account (get_option_positions / get_accounts), or edit it by hand to test the briefing. entry_price/current_price are per-contract premium; quantity is contracts.",
+  "total_value": 4250.18,
+  "cash": 612.40,
+  "buying_power": 612.40,
+  "day_pl": 84.10,
+  "week_pl": -42.55,
+  "month_pl": 318.90,
+  "updated_at": "2026-06-15T08:55:00",
+  "positions": [
+    {
+      "symbol": "NVDA",
+      "option_symbol": "NVDA260626C00135000",
+      "kind": "option",
+      "option_type": "call",
+      "strike": 135.0,
+      "expiration": "2026-06-26",
+      "quantity": 1,
+      "entry_price": 2.45,
+      "current_price": 3.30,
+      "delta": 0.46,
+      "theta": -0.07,
+      "gamma": 0.03,
+      "vega": 0.11,
+      "iv": 0.42
+    },
+    {
+      "symbol": "SPY",
+      "option_symbol": "SPY260620P00585000",
+      "kind": "option",
+      "option_type": "put",
+      "strike": 585.0,
+      "expiration": "2026-06-20",
+      "quantity": 2,
+      "entry_price": 1.80,
+      "current_price": 1.35,
+      "delta": -0.32,
+      "theta": -0.09,
+      "gamma": 0.02,
+      "vega": 0.08,
+      "iv": 0.13
+    }
+  ]
+}

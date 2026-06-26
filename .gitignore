@@ -1,0 +1,71 @@
+# ============================================================
+#  SECRETS & PRIVATE DATA  — never commit these
+# ============================================================
+# Environment / credentials (Tradier token, Telegram token, account #)
+.env
+*.env
+!.env.example
+options_engine/.env
+
+# Account / portfolio data (balances, positions)
+portfolio_sync.json
+**/portfolio_sync.json
+rh_cache.json
+**/rh_cache.json
+
+# Order tickets (contain account # and contract details)
+tickets/
+**/tickets/
+
+# Runtime state & data logs
+iv_history.json
+**/iv_history.json
+*_log.csv
+signals_log.csv
+trades_log.csv
+
+# ============================================================
+#  Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# ============================================================
+#  Databases & logs
+# ============================================================
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# ============================================================
+#  Build artifacts
+# ============================================================
+dist/
+build/
+*.egg
+
+# ============================================================
+#  Node (stray lockfiles, if any)
+# ============================================================
+node_modules/
+package-lock.json
+
+# ============================================================
+#  IDE / editor / OS
+# ============================================================
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

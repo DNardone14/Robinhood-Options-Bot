@@ -1,0 +1,15 @@
+# Options Day Trading Strategy Engine — dependencies
+requests>=2.31.0          # Tradier REST client
+yfinance>=0.2.40          # fallback historical OHLCV
+pandas>=2.1.0
+numpy>=1.26.0
+scipy>=1.11.0             # Black-Scholes / norm CDF for Greeks
+python-dateutil>=2.8.2
+pytz>=2024.1
+rich>=13.7.0             # terminal dashboard
+APScheduler>=3.10.4      # scan-loop + scheduled jobs (briefing, reports)
+pandas-market-calendars>=4.4.0  # NYSE session calendar
+fastapi>=0.110.0         # mobile dashboard
+uvicorn>=0.29.0          # ASGI server for the dashboard
+# Notifications use `requests` (already above) for Telegram + Twilio REST,
+# and stdlib smtplib for email — no extra SDKs required.
