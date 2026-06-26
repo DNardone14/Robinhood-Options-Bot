@@ -1,0 +1,17 @@
+# Normalize line endings — store as LF in the repo
+* text=auto
+
+# Shell scripts MUST stay LF (they run on the Linux droplet; CRLF breaks bash)
+*.sh text eol=lf
+# Git hook scripts must stay LF too (the shebang breaks with CRLF)
+scripts/git-hooks/* text eol=lf
+
+# Python as LF everywhere for consistency
+*.py text eol=lf
+
+# Treat these as binary so Git never rewrites them
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pyc binary

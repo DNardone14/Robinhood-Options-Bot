@@ -1,0 +1,13 @@
+#!/bin/sh
+# Pre-commit hook: run the test suite before allowing a commit.
+# Activate once with:  git config core.hooksPath scripts/git-hooks
+# (works on Windows via Git's bundled bash, macOS, and Linux)
+
+echo "[pre-commit] running tests..."
+if ! python -m pytest tests/ -q; then
+  echo ""
+  echo "[pre-commit] tests FAILED — commit aborted. Fix the tests or use 'git commit --no-verify' to bypass."
+  exit 1
+fi
+echo "[pre-commit] tests passed."
+exit 0
