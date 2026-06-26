@@ -140,4 +140,12 @@ Secrets live in `options_engine/.env` (gitignored). Portfolio state lives in
 
 ---
 
+## 9. Future additions to project
+
+1. Auto-run tests before committing
+2. Create richer alerts with pictures in Telegram messages
+3. Robinhood position sync - to see live updated position
+4. Backtester Realism
+5. Earnings chart
+
 *Generated from the build session. Last updated: June 2026.*
